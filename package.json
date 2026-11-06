@@ -1,0 +1,26 @@
+{
+  "name": "badminton-class-game",
+  "version": "0.3.0",
+  "private": true,
+  "description": "배드민턴 수업용 게임 – 1단계 프로토타입 (계정 없이 AI와 1:1 단식 + 튜토리얼)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "build:single": "vite build --mode single",
+    "preview": "vite preview --host",
+    "test:sim": "node tools/simulate-match.mjs",
+    "test:tutorial": "node tools/simulate-tutorial.mjs",
+    "peer-server": "node tools/peer-server.mjs"
+  },
+  "dependencies": {
+    "peerjs": "^1.5.5",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "express": "^4.22.3",
+    "peer": "^1.0.2",
+    "vite": "^5.4.0",
+    "vite-plugin-singlefile": "^2.0.0"
+  }
+}
